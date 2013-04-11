@@ -6,7 +6,7 @@
 
 <meta charset="utf-8" />
 
-<title>Blank HTML 5 Template</title>  
+<title>Updated page title</title>  
 
 </head>  
 
