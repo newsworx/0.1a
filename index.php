@@ -20,15 +20,7 @@
 	<form>
 			<h2>Simple list</h2>
 
-			<ul data-role="listview" data-inset="true">
-				<li><a href="index.html">Acura</a></li>
-				<li><a href="index.html">Audi</a></li>
-				<li><a href="index.html">BMW</a></li>
-				<li><a href="index.html">Cadillac</a></li>
-				<li><a href="index.html">Ferrari</a></li>
-			</ul>
-
-		<h2>Count bubbles</h2>
+		<h2>Memory Lanes</h2>
 		<ul data-role="listview" data-inset="true">
 			<li><a href="index.html">Inbox <span class="ui-li-count">12</span></a></li>
 				<li><a href="index.html">Outbox <span class="ui-li-count">0</span></a></li>
@@ -37,7 +29,7 @@
 				<li><a href="index.html">Trash <span class="ui-li-count">62</span></a></li>
 		</ul>
 		
-		<h2>Numbered list</h2>
+		<h2>Memories</h2>
 			<ol data-role="listview" data-inset="true">
 				<li><a href="index.html">The Godfather</a></li>
 				<li><a href="index.html">Inception</a></li>
