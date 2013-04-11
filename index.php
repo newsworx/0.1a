@@ -41,7 +41,7 @@
 			<ol data-role="listview" data-inset="true">
 				<li><a href="index.html">The Godfather</a></li>
 				<li><a href="index.html">Inception</a></li>
-				<li><a href="index.html">The Good, the Bad and the Ugly </a></li>
+				<li><a href="index.html">The Good, the Bad the Ugly </a></li>
 				<li><a href="index.html">Pulp Fiction</a></li>
 				<li><a href="index.html">Schindler's List</a></li>
 			</ol>
