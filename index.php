@@ -1,11 +1,17 @@
 <!DOCTYPE html> 
 <html> 
 <head> 
-	<title>My Page</title> 
+	<title>Compass 0.1a</title> 
 	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+
+
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.css" />
 	<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.js"></script>
+
+
+
 </head> 
 <body> 
 
@@ -15,11 +21,15 @@
 		<h1>Compass 0.1</h1>
 	</div><!-- /header -->
 	
+<div data-role="footer">
+<a href="index_2.php" data-icon="gear" data-role="button" data-transition="pop">Edit Profile</a>
+<a href="index_2.php" data-icon="plus" data-role="button" data-transition="pop">New Lane</a>
+<a href="index_2.php" data-icon="plus" data-role="button" data-transition="pop">New Memory</a>
+	</div><!-- /footer -->
+	
 	<div data-role="content">	
 
 	<form>
-			<h2>Simple list</h2>
-
 		<h2>Memory Lanes</h2>
 		<ul data-role="listview" data-inset="true">
 			<li><a href="index.html">Inbox <span class="ui-li-count">12</span></a></li>
@@ -38,7 +48,9 @@
 				<li><a href="index.html">Schindler's List</a></li>
 			</ol>
 			
-		<h2>Formatted content</h2>
+
+		
+			<h2>Formatted content</h2>
 		<ul data-role="listview" data-inset="true">
 			<li><a href="index.html">
 				<h3>Stephen Weber</h3>
@@ -111,12 +123,6 @@
 		
 	</div><!-- /content -->
 
-<div data-role="footer">
-<a href="index.html" data-icon="gear" data-role="button">Edit Profile</a>
-<a href="index.html" data-icon="plus" data-role="button">New Lane</a>
-<a href="index.html" data-icon="plus" data-role="button">New Memory</a>
-	</div><!-- /footer -->
-	
 </div><!-- /page -->
 
 </body>
