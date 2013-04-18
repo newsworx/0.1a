@@ -15,8 +15,6 @@
 </head> 
 <body> 
 
-<?php 
-
 <div data-role="page">
 	
 <div data-role="footer">
@@ -110,4 +108,3 @@
 
 </body>
 </html>
-?>
