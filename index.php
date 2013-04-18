@@ -19,11 +19,15 @@
 <?php 
 >>>>>>> Added new pages!
 
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 	<div data-role="header">
 		<h1>Compass 0.1</h1>
 	</div><!-- /header -->
+=======
+<div data-role="page">
+>>>>>>> Remove App header from web code
 	
 <div data-role="footer">
 <a href="index_2.php" data-icon="gear" data-role="button" data-transition="pop">Edit Profile</a>
