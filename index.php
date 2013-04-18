@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html> 
 <html> 
 <head> 
@@ -15,19 +14,10 @@
 
 </head> 
 <body> 
-=======
+
 <?php 
->>>>>>> Added new pages!
 
-<<<<<<< HEAD
-
-<<<<<<< HEAD
-	<div data-role="header">
-		<h1>Compass 0.1</h1>
-	</div><!-- /header -->
-=======
 <div data-role="page">
->>>>>>> Remove App header from web code
 	
 <div data-role="footer">
 <a href="index_2.php" data-icon="gear" data-role="button" data-transition="pop">Edit Profile</a>
@@ -74,16 +64,7 @@
 			</a></li>
 		</ul>
 		
-			
-=======
-
-echo "WOoooooooooooooo!";
-
->>>>>>> Added new pages!
-
-
-<<<<<<< HEAD
-			<ul data-role="listview" data-inset="true">
+		<ul data-role="listview" data-inset="true">
 				<li><a href="index.html">
 				<img src="images/album-bb.jpg" />
 				<h3>Broken Bells</h3>
@@ -129,6 +110,4 @@ echo "WOoooooooooooooo!";
 
 </body>
 </html>
-=======
 ?>
->>>>>>> Added new pages!
