@@ -1,0 +1,103 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>Compass 0.1a</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+
+
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.js"></script>
+
+<button class="show-page-loading-msg" data-theme="d" data-textonly="false" data-textvisible="false" data-msgtext="" data-inline="true">Icon (default)</button>
+
+
+</head> 
+<body>  
+
+<div data-role="page">
+
+<div data-role="header">
+    <h1><img src="Images/logo.png" width="250" height="72">
+</div>
+
+	
+<div data-role="footer">
+<a href="index.php" data-icon="home" data-role="button" data-transition="pop">Home</a>
+<a href="edit_profile.php" data-icon="gear" data-role="button" data-transition="flip">Edit Profile</a>
+<a href="view_memories.php" data-icon="gear" data-role="button" data-transition="flip">View Memories</a>
+<a href="logout.php" data-icon="minus" data-role="button" data-transition="flip">Sign out</a>
+	</div><!-- /footer -->
+	
+	<div data-role="content">	
+
+	<form>
+
+	<h1>Have a new memory? Upload it!</h1>
+<div data-role="collapsible-set" data-theme="b" data-content-theme="c">
+    <div data-role="collapsible">
+        <h3><img src="Images/187-pencil.png" width="23" height="23">&emsp;&emsp; Upload Text of Memory</h3>
+        <p><form>
+    <label for="textarea-1">What's your memory?</label>
+    <textarea cols="40" rows="8" name="textarea-1" id="textarea-1"></textarea>
+</form></p>
+    </div>
+    <div data-role="collapsible">
+        <h3><img src="Images/66-microphone.png" width="12" height="24"> &emsp;&emsp;  Upload Audio of Memory </h3>
+        <p><form>
+     <label for="file-2">Audio of Memory:</label>
+     <input type="file" data-clear-btn="true" name="file-2" id="file-2" value="">
+</form></p>
+    </div>
+    <div data-role="collapsible">
+        <h3><img src="Images/86-camera.png" width="24" height="18"> &emsp;&emsp;  Upload Photo of Memory</h3>
+        <p><form>
+     <label for="file-2">Photo of Memory:</label>
+     <input type="file" data-clear-btn="true" name="file-2" id="file-2" value="">
+</form></p>
+    </div>
+    <div data-role="collapsible">
+        <h3><img src="Images/46-movie-2.png" width="20" height="25"> &emsp;&emsp; Upload Video of Memory</h3>
+        <p><form>
+     <label for="file-2">Video of Memory:</label>
+     <input type="file" data-clear-btn="true" name="file-2" id="file-2" value="">
+</form></p>
+    </div>
+</div>
+    <div data-role="collapsible">
+        <h2><img src="Images/74-location.png" width="20" height="20">&emsp;&emsp; Upload Location of Memory</h2>
+        <p>I'm the collapsible content for section 3</p>
+    </div>
+    
+    <form action="upload_memories.php" method="post">
+<button type="submit" value="Submit">Add memories</button>
+
+</form>
+
+    
+    <h1>Your recent memories:</h1>
+    
+    <ul data-role="listview" data-inset="true">
+    <li><a href="#">
+        <img src="../../_assets/img/album-bb.jpg">
+        <h2>Most recent memory</h2>
+        <p>Most recently published memory will go here</p></a>
+    </li>
+    <li><a href="#">
+        <img src="../../_assets/img/album-hc.jpg">
+        <h2>Other memory</h2>
+        <p>Other memory will go right here</p></a>
+    </li>
+    <li><a href="#">
+        <img src="../../_assets/img/album-p.jpg">
+        <h2>And another memory will be here</h2>
+        <p>And here's one more</p></a>
+    </li>
+</ul>
+
+
+
+
+</body>
+</html>
