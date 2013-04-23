@@ -5,13 +5,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1"> 
 
 
+ <link rel="stylesheet" href="css/themes/memorylane_v1.css" />
+ <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile.structure-1.3.1.min.css" /> 
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script> 
+  <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script> 
 
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.css" />
-	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
-    
 
-<button class="show-page-loading-msg" data-theme="d" data-textonly="false" data-textvisible="false" data-msgtext="" data-inline="true">Icon (default)</button>
+<button class="show-page-loading-msg" data-theme="a" data-textonly="false" data-textvisible="false" data-msgtext="" data-inline="true">Icon (default)</button>
 
 
 </head> 
@@ -25,8 +25,11 @@
 
 <div data-role="footer">
 <a href="compasstemplate.html" data-icon="home" data-role="button" data-transition="pop">Home</a>
+
 <a href="edit_profile.php" data-icon="gear" data-role="button" data-transition="flip">Edit Profile</a>
-<a href="compasstemplate.html" data-icon="gear" data-role="button" data-transition="reverse-flip">View Memories</a>
+
+<a href="compasstemplate.html" data-icon="gear" data-role="button" data-transition="flip">View Memories</a>
+
 <a href="signout.php" data-icon="minus" data-role="button" data-transition="flip">Sign out</a>
 	</div><!-- /footer -->
 

@@ -5,13 +5,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1"> 
 
 
+ <link rel="stylesheet" href="css/themes/memorylane_v1.css" />
+ <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile.structure-1.3.1.min.css" /> 
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script> 
+  <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script> 
 
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.css" />
-	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
-    
 
-<button class="show-page-loading-msg" data-theme="d" data-textonly="false" data-textvisible="false" data-msgtext="" data-inline="true">Icon (default)</button>
+<button class="show-page-loading-msg" data-theme="a" data-textonly="false" data-textvisible="false" data-msgtext="" data-inline="true">Icon (default)</button>
 
 
 </head> 
@@ -20,8 +20,9 @@
 <div data-role="page">
 
 <div data-role="header">
-    <h1><img src="Images/logo.png" width="250" height="72">
+    <h1><img src="Images/logo.png" width="200" height="64">
 </div>
+    
 
 	
 <div data-role="footer">
@@ -37,7 +38,9 @@
 
 	<h1>Have a new memory? Upload it!</h1>
     
-  <form> <label for="memory_name"> <h2> Memory Name: </h2></label>
+  <form> 
+  
+  <label for="memory_name"> <h2> Memory Name: </h2></label>
      <input type="text" name="memory_name" id="memory_name" value="" placeholder="What's the name of your memory?"> </form> 
      
      <br> </br>
@@ -46,7 +49,7 @@
     <div data-role="collapsible">
         <h3> <center><img src="Images/187-pencil.png" width="23" height="23">&emsp;Upload Text </center> </h3>
         <p><form>
-    <label for="memory_text">Desribe your memory:</label>
+    <label for="memory_text">Describe your memory:</label>
     <textarea cols="40" rows="8" data-clear-btn="true" name="memory_text" id="memory_text"></textarea> 
 </form></p>
     </div>
@@ -76,10 +79,11 @@
     </div>
 </div>
     <div data-role="collapsible">
-        <h2><img src="Images/71-compass@2x.png" width="20" height="20">Upload Location of Memory</h2>
+        <h2><center><img src="Images/71-compass@2x.png" width="20" height="20">&emsp;Upload Location of Memory</center></h2>
         <p>Maybe a Google Map here? Or just a form to type in the location.</p>
     </div>
     
+    <br> </br>
     <form action="upload_memories.php" method="post">
 <button type="submit" value="Submit">Click to add Memory</button>
 
