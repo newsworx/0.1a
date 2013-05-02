@@ -1,5 +1,5 @@
 <?php
-require("dbaccess.php");
+require("dbinfo.php");
 
 function parseToXML($htmlStr) 
 { 
