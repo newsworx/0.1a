@@ -1,23 +1,23 @@
 <?php
-require("phpsqlajax_dbinfo.php");
+require("dbaccess.php");
 
 function parseToXML($htmlStr) 
 { 
 $xmlStr=str_replace('<','&lt;',$htmlStr); 
 $xmlStr=str_replace('>','&gt;',$xmlStr); 
 $xmlStr=str_replace('"','&quot;',$xmlStr); 
-$xmlStr=str_replace("'",'&#39;',$xmlStr); 
+$xmlStr=str_replace("'",'&apos;',$xmlStr); 
 $xmlStr=str_replace("&",'&amp;',$xmlStr); 
 return $xmlStr; 
 } 
 
-// Opens a connection to a MySQL server
+// Opens a connection to a mySQL server
 $connection=mysql_connect (localhost, $username, $password);
 if (!$connection) {
   die('Not connected : ' . mysql_error());
 }
 
-// Set the active MySQL database
+// Set the active mySQL database
 $db_selected = mysql_select_db($database, $connection);
 if (!$db_selected) {
   die ('Can\'t use db : ' . mysql_error());
@@ -39,7 +39,7 @@ echo '<markers>';
 while ($row = @mysql_fetch_assoc($result)){
   // ADD TO XML DOCUMENT NODE
   echo '<marker ';
-  echo 'name="' . parseToXML($row['name']) . '" ';
+  echo 'name="' . parseToXML('&','&amp;', $row['name']) . '" ';
   echo 'address="' . parseToXML($row['address']) . '" ';
   echo 'lat="' . $row['lat'] . '" ';
   echo 'lng="' . $row['lng'] . '" ';
