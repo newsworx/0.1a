@@ -10,19 +10,15 @@
   <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script> 
   <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script> 
 
-
-<button class="show-page-loading-msg" data-theme="a" data-textonly="false" data-textvisible="false" data-msgtext="" data-inline="true">Icon (default)</button>
-
-
 </head> 
 <body>  
 
 <div data-role="page">
 
 <div data-role="header">
-    <h1><img src="Images/logo.png" width="250" height="72">
+    <h1><img src="Images/logo.png" class="ui-center"/> </h1>
 </div>
-
+    
 	
 <div data-role="footer">
 <a href="compasstemplate.html" data-icon="home" data-role="button" data-transition="pop">Home</a>
@@ -31,7 +27,7 @@
 <a href="signout.php" data-icon="minus" data-role="button" data-transition="pop">Sign out</a>
 	</div><!-- /footer -->
     
-    
+     <div data-role="content">
     
     <?php
 	
@@ -47,6 +43,6 @@
 	?>
     
     
-    
+   </div> 
 </body>
 </html>

@@ -10,12 +10,6 @@
   <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script> 
   <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script> 
 
-</head>
-				
-			
-
-<button class="show-page-loading-msg" data-theme="a" data-textonly="false" data-textvisible="false" data-msgtext="" data-inline="true">Icon (default)</button>
-
 
 </head> 
 <body>  
@@ -23,8 +17,10 @@
 <div data-role="page">
 
 <div data-role="header">
-    <h1><img src="Images/logo.png" width="200" height="64">
+    <h1><img src="Images/logo.png" class="ui-center"/> </h1>
 </div>
+    
+    <div data-role="content">
     
     <h1> Login Below! </h1>
 <form  method="post" action="login_verify.php">
@@ -38,5 +34,8 @@ Password: <input type="password" name="password">
     
     <br> </br>
     <center> <a href="new_user.php">Don't have an account yet? Register here!</a> </center>
+    
+    </div>
+    
 </body>
 </html>

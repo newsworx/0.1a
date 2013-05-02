@@ -1,18 +1,13 @@
 <!DOCTYPE html> 
-<html> 
-<head> 
+<html><head> 
 	<title>Compass 0.1a</title> 
 	<meta name="viewport" content="width=device-width, initial-scale=1"> 
 
 
  <link rel="stylesheet" href="css/themes/memorylane_v1.css" />
  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile.structure-1.3.1.min.css" /> 
-  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script> 
-  <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script> 
 
-
-<button class="show-page-loading-msg" data-theme="a" data-textonly="false" data-textvisible="false" data-msgtext="" data-inline="true">Icon (default)</button>
-
+  
 
 </head> 
 <body>  
@@ -20,7 +15,9 @@
 <div data-role="page">
 
 <div data-role="header">
-    <h1><img src="Images/logo.png" width="200" height="64">
+    <h1> <img src="Images/logo.png" class="ui-center"/></h1>
+    
+    
 </div>
     
 
@@ -45,7 +42,7 @@
      
      <br> </br>
      
-<div data-role="collapsible-set" data-theme="b" data-content-theme="c">
+<div data-role="collapsible-set" data-theme="a" data-content-theme="a">
     <div data-role="collapsible">
         <h3> <center><img src="Images/187-pencil.png" width="23" height="23">&emsp;Upload Text </center> </h3>
         <p><form>
@@ -78,9 +75,21 @@
 </form></p>
     </div>
 </div>
-    <div data-role="collapsible">
+    <div data-role="collapsible" data-theme="a" data-content-theme="a">>
         <h2><center><img src="Images/71-compass@2x.png" width="20" height="20">&emsp;Upload Location of Memory</center></h2>
-        <p>Maybe a Google Map here? Or just a form to type in the location.</p>
+        <p> 
+        
+        <center>
+ 
+        <div data-role="page" id="page1">
+    <div data-role="content">
+        <img src="https://maps.googleapis.com/maps/api/staticmap?center=San Francisco, CA&amp;zoom=11&amp;size=288x200&amp;markers=Madison, WI&amp;sensor=false"
+        width="288" height="200">
+    </div>
+</div>
+
+</center>
+</p>
     </div>
     
     <br> </br>
@@ -110,7 +119,8 @@
     </li>
 </ul>
 
-
+</div>
+</div>
 
 
 </body>

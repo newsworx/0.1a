@@ -11,16 +11,13 @@
   <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script> 
 
 
-<button class="show-page-loading-msg" data-theme="a" data-textonly="false" data-textvisible="false" data-msgtext="" data-inline="true">Icon (default)</button>
-
-
 </head> 
 <body>  
 
 <div data-role="page">
 
 <div data-role="header">
-    <h1><img src="Images/logo.png" width="250" height="72">
+    <h1><img src="Images/logo.png" class="ui-center"/> </h1>
 </div>
 
 <div data-role="footer">
@@ -32,6 +29,8 @@
 
 <a href="signout.php" data-icon="minus" data-role="button" data-transition="flip">Sign out</a>
 	</div><!-- /footer -->
+    
+<div data-role="content">
 
 <h1> Your memories</h1>
 
@@ -39,6 +38,7 @@
 
 So instead of this, it'll be a PHP / MYSQL code that pulls the users saved memories and displays them in chronological order (the most recent memories being displayed higher up). Users will then have options to edit or delete their stored memories.
 
+ </div>
 
 </body>
 </html>

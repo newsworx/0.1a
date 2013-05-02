@@ -11,16 +11,13 @@
   <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script> 
 
 
-<button class="show-page-loading-msg" data-theme="a" data-textonly="false" data-textvisible="false" data-msgtext="" data-inline="true">Icon (default)</button>
-
-
 </head> 
 <body>   
 
 <div data-role="page">
 
 <div data-role="header">
-    <h1><img src="Images/logo.png" width="250" height="72">
+<h1><img src="Images/logo.png" class="ui-center"/> </h1>
 </div>
 
 <div data-role="footer">
@@ -30,7 +27,9 @@
 <a href="signout.php" data-icon="minus" data-role="button" data-transition="pop">Sign out</a>
 	</div><!-- /footer -->
     
-    <h1> Edit your profile below </h1>
+   <div data-role="content">
+   
+     <h1> Edit your profile below </h1>
         
     <form>
     <label for="email">First Name:</label>
@@ -70,6 +69,8 @@
 
  <br> </br>
  <br> </br>
+
+</div>
 
 </body>
 
