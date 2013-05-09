@@ -45,16 +45,18 @@
 
 <!--Pintrist-->
 
-<a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww.flickr.com%2Fphotos%2Fkentbrew%2F6851755809%2F&media=http%3A%2F%2Ffarm8.staticflickr.com%2F7027%2F6851755809_df5b2051c9_z.jpg&description=Next%20stop%3A%20Pinterest" data-pin-do="buttonPin" data-pin-config="above"><img src="http://assets.pinterest.com/images/pidgets/pin_it_button.png"/></a>
 
 <body>
+<a href="http://pinterest.com/pin/create/button/?url=<?php echo $current_url; ?>&media=http%3A%2F%2Fimgur.com%2FYEw4o9m&description=Compass" data-pin-do="buttonPin" data-pin-config="none"><img src="//assets.pinterest.com/images/pidgets/pin_it_button.png" /></a>
+
+<!--twitter-->
 
 <a href="https://twitter.com/share?<?php echo $current_url; ?>"  class="twitter-share-button" data-lang="es">Tweet</a>
 
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
 
-
+<script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script>
 </body>
 
 </html>
