@@ -10,7 +10,11 @@
 
 </head>  
 
+<?php
 
+$current_url = "http://" . $_SERVER['HTTP_HOST'] . $_SERVER['SCRIPT_NAME'] .  $_SERVER['QUERY_STRING'];
+
+?>
 
 <body>
 
@@ -25,14 +29,15 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
-<fb:like href="http://newsworxapps.com/j680/tjh/A08-API/A08_Like_Button_tjh.php" send="true" width="450" show_faces="true" colorscheme="dark"></fb:like>
+<fb:like href="<?php echo $current_url; ?>" send="true" width="450" show_faces="true" colorscheme="dark"></fb:like>
 
 
 <!--LinkedIn button-->
 
 <script src="//platform.linkedin.com/in.js" type="text/javascript">
+ lang: en_US
 </script>
-<script type="IN/Share" data-counter="top"></script>
+
 
 <!--Twitter button-->
 
@@ -45,18 +50,17 @@
 
 <!--Pintrist-->
 
+<a href="http://pinterest.com/pin/create/button/?url=<?php echo $current_url; ?>&media=http://i.imgur.com/wjRaN4g.jpg&description=compass" data-pin-do="buttonPin" data-pin-config="above"><img src="http://assets.pinterest.com/images/pidgets/pin_it_button.png"/></a>
 
 <body>
-<a href="http://pinterest.com/pin/create/button/?url=<?php echo $current_url; ?>&media=http%3A%2F%2Fimgur.com%2FYEw4o9m&description=Compass" data-pin-do="buttonPin" data-pin-config="none"><img src="//assets.pinterest.com/images/pidgets/pin_it_button.png" /></a>
-
-<!--twitter-->
 
 <a href="https://twitter.com/share?<?php echo $current_url; ?>"  class="twitter-share-button" data-lang="es">Tweet</a>
 
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
-
+<script type="IN/Share" data-url=<?php echo $current_url; ?>;</script> 
 <script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script>
+
 </body>
 
 </html>
