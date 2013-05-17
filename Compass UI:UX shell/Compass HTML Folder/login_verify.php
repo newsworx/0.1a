@@ -2,14 +2,14 @@
 
 <?php
 
-$user_id = $_POST["user_id"];
+$user_id = $_POST["user_name"];
 $password = $_POST["password"];
 
 function authenticateUser($user_id,$password)
 
 {
 
-	require 'login.php';
+	require 'db_login.php';
 
 
 	$query = "SELECT * FROM users WHERE userid = '" . $user_id . "'";
@@ -33,7 +33,7 @@ function authenticateUser($user_id,$password)
 
 		{
 	
-			require 'login.php';
+			require 'db_login.php';
 
 
 			$query = "SELECT * FROM users WHERE password = '" . $password . "'";
@@ -76,7 +76,6 @@ function authenticateUser($user_id,$password)
 
 ?>
 
-
 <!DOCTYPE html> 
 <html> 
 <head> 
@@ -96,7 +95,7 @@ function authenticateUser($user_id,$password)
 <div data-role="page">
 
 <div data-role="header">
-    <h1><img src="Images/logo.png" class="ui-center"/> </h1>
+    <h1><img src="Images/logo.png" width="90%"/></h1>
 </div>
 
 <?php

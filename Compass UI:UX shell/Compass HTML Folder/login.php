@@ -17,7 +17,7 @@
 <div data-role="page">
 
 <div data-role="header">
-    <h1><img src="Images/logo.png" class="ui-center"/> </h1>
+    <h1><img src="Images/logo.png" width="90%"/> </h1>
 </div>
     
     <div data-role="content">
@@ -27,7 +27,7 @@
 User Name: <input type="text" name="user_name">
 Password: <input type="password" name="password">
 <br>
-<form action="user_add.php" method="post">
+<form action="login_verify.php" method="post">
 <button type="submit" value="Submit">Login</button>
 </form>
     <br> </br>

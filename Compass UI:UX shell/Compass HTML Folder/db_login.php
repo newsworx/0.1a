@@ -2,7 +2,7 @@
 
 // db_login.php
 
-	$db_connection = mysqli_connect("localhost","stoneho3_juser","j2013","stoneho3_j680");
+	$db_connection = mysqli_connect("localhost","jfolio_juser","j2013","jfolio_j680");
 
 	// Check connection
 
