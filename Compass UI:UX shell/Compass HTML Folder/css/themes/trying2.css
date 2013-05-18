@@ -1,0 +1,50 @@
+@charset "UTF-8";
+/* CSS Document */
+
+<code>/* First we set the four elements of our vignette
+to be on top no matter what and set their initial
+width and height which we'll overwrite in the next declarations.
+*/
+#top, #bottom, #left, #right{
+height: 100%;
+position: absolute;
+z-index: 999;
+width: 100%; }
+ 
+ 
+/* Overwriting the default 100% */
+#top, #bottom{
+height: 15%; }
+ 
+ 
+#left, #right{
+width: 15%; }
+ 
+ 
+/* We set the gradient with CSS3 from a solid gray to
+a 100% transparent color which should be the same as
+the body background color, to have a nice, clean falloff.
+And we're also setting the position of the vignette elements.
+*/
+#top{
+background-image: -moz-linear-gradient(100% 100% 90deg, rgba(255, 255, 255, 0), #04b155 );
+background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#04b155), to(rgba(255, 255, 255, 0)));
+top: 0; }
+ 
+ 
+#bottom{
+background-image: -moz-linear-gradient(100% 100% 90deg, #04b155, rgba(255, 255, 255, 0) );
+background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255, 255, 255, 0)), to(#04b155));
+bottom: 0; }
+ 
+ 
+#left{
+background-image: -moz-linear-gradient(100% 100% 180deg, rgba(255, 255, 255, 0), #04b155 );
+background-image: -webkit-gradient(linear, left center, right center, from(#04b155), to(rgba(255, 255, 255, 0)));
+left: 0; }
+ 
+ 
+#right{
+background-image: -moz-linear-gradient(100% 100% 180deg, #04b155, rgba(255, 255, 255, 0) );
+background-image: -webkit-gradient(linear, right center, left center, from(#04b155), to(rgba(255, 255, 255, 0)));
+right: 0; }</code>
