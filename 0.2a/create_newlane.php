@@ -71,8 +71,10 @@ while ($row = mysqli_fetch_array($result))
 <div data-role="content">
 
 <?php
-$sql="INSERT INTO lanes (user_num, lane_name, lane_description)
-VALUES ('$uid','$_POST[new-name]','$_POST[description]')";
+require 'constants.php'; 
+
+$sql="INSERT INTO lanes (user_num, lane_name, lane_description) 
+VALUES ('$uid','$_POST[new_name]','$_POST[description]')";	
 
 echo "$sql";
 

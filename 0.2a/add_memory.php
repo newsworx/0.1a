@@ -72,7 +72,7 @@ while ($row = mysqli_fetch_array($result))
 
 <form action="create_newlane.php" method="post">
      New lane name:
-     <input type="text" name="new-name" id="new-name" placeholder="Name your new memory lane here...">
+     <input type="text" name="new_name" id="new_name" placeholder="Name your new memory lane here...">
      
 <br>
  <br>
