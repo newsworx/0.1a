@@ -55,7 +55,17 @@ while ($row = mysqli_fetch_array($result))
 <link rel="stylesheet" href="c/ml.css" />
 
 <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=true"></script>
+
+    <script type='text/javascript' src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
     
+  
+    
+    
+      <script type='text/javascript' src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/additional-methods.js"></script>
+    
+
+
+
 </head>
  
 <body>  
@@ -64,23 +74,29 @@ while ($row = mysqli_fetch_array($result))
 
 <div data-role="header">
 
-<?php echo "<h4>Create your new memory lane, " . $first_name . "!</h4>"; ?>
+<a href="default.php"  class="ui-btn-left"  data-theme="a" data-mini="true" data-icon="arrow-l" data-role="button" data-transition="slide" data-direction="reverse">Home</a>
+
+<?php echo "<h4>New Memory Lane</h4>"; ?>
 
 	</div><!-- /header -->
     
 <div data-role="content">
 
-<form action="create_newlane.php" method="post">
-     New lane name:</label>
-     <input type="text" name="new-name" id="new-name" value="" placeholder="Name your new memory lane here...">
+A Memory Lane is a collection of Memories. You can place Memories on a map and attach Mementos to them.
+
+<br /><br />
+
+<form name="lane" action="lane_add.php" method="get">
+
+<label for="new-name"><strong>Memory Lane Name</strong></label>
+
+     <input type="text" name="lane_name" id="name" placeholder="Please name your new Memory Lane here">
      
-<br>
  <br>
-Description of new lane :
-    <input type="text" textarea cols="40" rows="8" name="description" id="description" placeholder="Please provide a description of your new memory lane."></textarea>
+<label for="textarea-a"><strong>Description</strong></label>
 
+<textarea name="lane_description" id="textarea-a" placeholder="Please describe your new Memory Lane here"></textarea>
 
-<br>
 <br>
     <input type="submit" value="Create Memory Lane">
     </form>

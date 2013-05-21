@@ -73,7 +73,7 @@ $user_id 		= $row["user_id"];
 
 <div data-role="content">
 
-<a data-role="button" data-theme="b" data-icon="plus" href="add_memory.php">New Memory Lane</a>
+<a data-role="button" data-theme="b" data-icon="plus" href="new_lane.php">New Memory Lane</a>
 
 <?php
 
