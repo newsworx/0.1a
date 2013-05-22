@@ -76,13 +76,13 @@ while ($row = mysqli_fetch_array($result))
 
 <a href="default.php"  class="ui-btn-left"  data-theme="a" data-mini="true" data-icon="arrow-l" data-role="button" data-transition="slide" data-direction="reverse">Home</a>
 
-<?php echo "<h4>New Memory Lane</h4>"; ?>
+<?php echo "<h4>New Memento</h4>"; ?>
 
 	</div><!-- /header -->
     
 <div data-role="content">
 
-Here you can add your "mementos" to your current memory. Mementos can be links to websites, videos, photos -- whatever you captured!
+Here you can add your "mementos" to your current memory. Mementos can be links to websites, videos, photos -- whatever you captured that adds to your Memory!
 
 <br /><br />
 
