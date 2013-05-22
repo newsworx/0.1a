@@ -49,13 +49,8 @@ while ($row = mysqli_fetch_array($result))
 <link rel="stylesheet" href="c/compass0-2.min.css" />
 <link rel="stylesheet" href="c/ml.css" />
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile.structure-1.3.1.min.css" />
-
-
 <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-
 <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
-
-
 
 <link rel="stylesheet" href="c/ml.css" />
 
@@ -81,51 +76,50 @@ while ($row = mysqli_fetch_array($result))
 
 <a href="default.php"  class="ui-btn-left"  data-theme="a" data-mini="true" data-icon="arrow-l" data-role="button" data-transition="slide" data-direction="reverse">Home</a>
 
-<?php echo "<h4>New Memory</h4>"; ?>
+<?php echo "<h4>New Memory Lane</h4>"; ?>
 
 	</div><!-- /header -->
     
 <div data-role="content">
 
-Here you can add all of your memories to your specific memory lane. 
+Here you can add your "mementos" to your current memory. Mementos can be links to websites, videos, photos -- whatever you captured!
 
 <br /><br />
 
-<form name="memory" action="memory_add.php" method="get">
+<form name="asset" action="asset_add.php" method="get">
 
-<label for="new-name"><strong>Memory Name</strong></label>
+<div data-role="fieldcontain">
+    <label for="select-native-2"><strong>Type</strong></label>
+    <br> </> <br> </> 
+    <select name="memento_type" id="type" data-mini="true">
+        <option value="link">Link</option>
+        <option value="photo">Photo</option>
+        <option value="video">Video</option>
+    </select>
+</div>
 
-     <input type="text" name="memory_name" id="name" placeholder="Please name your new Memory here">
+<br /><br />
+
+<label for="new-name"><strong>Memento Name</strong></label>
+
+     <input type="text" name="memento_name" id="memento_name" placeholder="Please name your new memento here">
      
  <br>
-<label for="memory_description"><strong>Description</strong></label>
+<label for="textarea-a"><strong>Description</strong></label>
 
-<textarea name="memory_description" id="memory_description" placeholder="Please describe your new Memory here"></textarea>
-
-<br>
-<label for="longitude"><strong>Longitude</strong></label>
-
-<input type="text" name="longitude" id="longitude" placeholder="Please enter the Longitude of your memory"></input>
-
-<br>
-<label for="latitude"><strong>Latitude</strong></label>
-
-<input type="text" name="latitude" id="latitude" placeholder="Please enter the Latitude of your memory"></input>
+<textarea name="memento_description" id="memento_decription" placeholder="Please describe your new memento here"></textarea>
 
 <br>
 
+<label for="new-name"><strong>Memento URL</strong></label>
 
-<label for="date"><strong>Date</strong></label>
-     <input type="date" data-clear-btn="true" name="date" id="date" placeholder="Select the date when your memory occured">
-
-<br>
-    <input type="submit" value="Create Memory">
+     <input type="text" name="url" id="url" placeholder="Please provide the URL for your memento">
+     
+ <br>
+ 
+ <br>
+    <input type="submit" value="Create Memento">
     </form>
-
-
-
-
-
 
 </div><!-- content -->
     

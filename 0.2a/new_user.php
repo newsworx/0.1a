@@ -46,6 +46,13 @@ Confirm Password<input type="password" name="confirm_password">
 <br>
 <button type="submit" value="Submit">Create new account</button>
 </form>
+<br> </>
+<div class="center">
+
+<a href="login.php">Already registered? Login here!</a>
+
+</div>
+
 
     </div>
     

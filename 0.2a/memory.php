@@ -114,7 +114,7 @@ load();
 
 <div id="map_container"><div id="map"></div></div>
 
-<a data-role="button" data-theme="b" data-icon="plus" href="add_memory.php">New Memento</a>
+<a data-role="button" data-theme="b" data-icon="plus" href="new_asset.php">New Memento</a>
 
 <?php
 
