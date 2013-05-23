@@ -5,6 +5,81 @@ $last_name 		= $_POST["last_name"];
 $user_id 		= $_POST["user_id"];
 $password		= $_POST["password"];
 
+$query_string = "?";
+$val_errors = 0;
+
+if (strlen($first_name) < 1)
+
+{
+
+$query_string = $query_string . "first_name=req&";
+$val_errors++;
+
+}
+
+else
+
+{
+
+$query_string = $query_string . "first_name=" . $first_name . "&";
+
+}
+
+if (strlen($last_name) < 1)
+
+{
+
+$query_string = $query_string . "last_name=req&";
+$val_errors++;
+
+
+}
+
+else
+
+{
+
+$query_string = $query_string . "last_name=" . $last_name . "&";
+
+}
+
+if (strlen($user_id) < 4)
+
+{
+
+$query_string = $query_string . "user_id=req&";
+$val_errors++;
+
+
+}
+
+else
+
+{
+
+$query_string = $query_string . "user_id=" . $user_id . "&";
+
+}
+
+if (strlen($password) < 4)
+$val_errors++;
+
+
+{
+
+$query_string = $query_string . "password=req&";
+
+}
+
+if ($val_errors > 0)
+
+{
+
+header("Location: new_user.php" . $query_string);
+break;
+
+}
+
 require 'constants.php';
 
 // Check connection
@@ -36,32 +111,24 @@ die('Error: ' . mysqli_error($db_connection));
 
 }
 
+$query_user = "SELECT * FROM users WHERE user_id = '$user_id' AND password = '$password'";
+
+
+$result_user = mysqli_query($db_connection,$query_user);
+
+while ($row = mysqli_fetch_array($result_user))
+
+{
+
+// assign user details to php variables
+
+$user_num = $row['user_num'];
+setcookie("compass_auth", $user_num, time()+2592000);  /* expire in 30 days */
+
+header('Location: default.php?first=1');
+
+}
+
 mysqli_close($db_connection);
 
 ?>
-
-<!DOCTYPE html> 
-<html> 
-<head> 
-	<title>Compass 0.1a</title> 
-	<meta name="viewport" content="width=device-width, initial-scale=1"> 
-
-
- <link rel="stylesheet" href="css/themes/memorylane_v1.css" />
- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile.structure-1.3.1.min.css" /> 
-  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script> 
-  <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script> 
-
-
-</head> 
-<body>  
-
-<div data-role="page">
-
-<div data-role="header">
-    <h1><img src="Images/logo.png" class="ui-center"/> </h1>
-</div>
-
-</body>
-
-</html>

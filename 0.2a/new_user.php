@@ -38,10 +38,10 @@ Create a Memory Lane account to save and share your memories. Storytelling is ju
 <br /><br />
 
 <form data-ajax="false" action="user_add.php" method="post">
-First Name<input type="text" name="first_name">
-Last Name<input type="text" name="last_name">
-Email<input type="text" name="user_id">
-Password<input type="password" name="password">
+First Name <?php if ($_GET['first_name'] == "req") { echo "<span style=color:red;font-weight:bold;>REQUIRED</span>"; }?><input type="text" name="first_name" value="<?php if ($_GET['first_name'] != "req") { echo $_GET['first_name']; }?>">
+Last Name <?php if ($_GET['last_name'] == "req") { echo "<span style=color:red;font-weight:bold;>REQUIRED</span>"; }?><input type="text" name="last_name" value="<?php if ($_GET['last_name'] != "req") { echo $_GET['last_name']; }?>">
+Email <?php if ($_GET['user_id'] == "req") { echo "<span style=color:red;font-weight:bold;>REQUIRED</span>"; }?><input type="text" name="user_id" value="<?php if ($_GET['user_id'] != "req") { echo $_GET['user_id']; }?>">
+Password <?php if ($_GET['password'] == "req") { echo "<span style=color:red;font-weight:bold;>REQUIRED</span>"; }?><input type="password" name="password">
 Confirm Password<input type="password" name="confirm_password">
 <br>
 <button type="submit" value="Submit">Create new account</button>
